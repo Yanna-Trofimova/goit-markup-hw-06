@@ -75,35 +75,38 @@
               <form action="" class="modal-form">
                 <div class="form-element" >
                   <label for="name" class="form-info">Ім'я</label>
+                  <div class="input-svg-info">
                   <input type="text"  id="name" name="name" class="input-info"/>
 
                  
                     <svg class="svg-form">
                       <use href="./image/icon.svg#name-form"></use>
                     </svg>
-                  
+                  </div>
                 </div>
                 
                 <div class="form-element">
                   <label for="phone" class="form-info">Телефон</label>
+                  <div class="input-svg-info">
                   <input type="tel" id="phone" name="mobile" class="input-info"/>
 
                   
                     <svg class="svg-form">
                       <use href="./image/icon.svg#phone-form"></use>
                     </svg>
-                  
+                  </div>
                 </div>
 
                 <div class="form-element">
                   <label for="mail" class="form-info">Пошта</label>
+                  <div class="input-svg-info">
                   <input type="email" id="mail" name="mail" class="input-info"/>
 
                   
                     <svg class="svg-form">
                       <use href="./image/icon.svg#mail-form"></use>
                     </svg>
-                 
+                </div>
                 </div>
 
                 <div class="form-element">
@@ -525,7 +528,8 @@
       <div class="mailing-list">
 
         <h2 class="title-mailing">Підпишіться на розсилку</h2>
-        <input type="email" id="mail" name="mail" class="input-mailing" placeholder="E-mail" />
+        <label id="mailing"></label>
+        <input type="email" id="mailing" name="mailing" class="input-mailing" placeholder="E-mail" />
         <button type="submit" class="mailing-btn">Підписатися</button>
 
       </div>
