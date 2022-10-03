@@ -59,8 +59,8 @@
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
           <button type="button" class="hero-btn" data-modal-open>Замовити послугу</button>
 
-          <div class="backdrop " data-modal>
-            <div class="modal">
+          <div class="backdrop is-hidden " data-modal  >
+            <div class="modal" >
               <button type="button" class="close-button" data-modal-close>
                 <svg class="modal-svg">
                   <use href="./image/icon.svg#button-close"></use>
@@ -73,7 +73,7 @@
 
               <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
               <form action="" class="modal-form">
-                <div class="form-element">
+                <div class="form-element" >
                   <label for="name" class="form-info">Ім'я</label>
                   <input type="text"  id="name" name="name" class="input-info"/>
 
@@ -115,12 +115,7 @@
                 <div class="form-chek">
                 
                   <input type="checkbox" id="agree" name="mailing-list"  class="check-input"/>
-                  <span>
-                    <svg class="icon-check">
-                      <use href="./image/icon.svg#icon-check"></use>
                   
-                    </svg>
-                  </span>
                   <label for="agree" class="check-label">Погоджуюся з розсилкою та приймаю <span><a href="" class="agreement-link">Умови договору</a>
                     </span></label>
                 
@@ -523,6 +518,15 @@
             </a>
           </li>
         </ul>
+
+      </div>
+
+
+      <div class="mailing-list">
+
+        <h2 class="title-mailing">Підпишіться на розсилку</h2>
+        <input type="email" id="mail" name="mail" class="input-mailing" placeholder="E-mail" />
+        <button type="submit" class="mailing-btn">Підписатися</button>
 
       </div>
       </div>
