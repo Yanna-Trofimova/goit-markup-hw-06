@@ -118,6 +118,11 @@
                 <div class="form-chek">
                 
                   <input type="checkbox" id="agree" name="mailing-list"  class="check-input"/>
+                  <div class="checkbox-icon">
+                    <svg class="check-svg">
+                      <use href="./image/icon.svg#icon-check"></use>
+                    </svg>
+                  </div>
                   
                   <label for="agree" class="check-label">Погоджуюся з розсилкою та приймаю <span><a href="" class="agreement-link">Умови договору</a>
                     </span></label>
@@ -527,11 +532,13 @@
 
       <div class="mailing-list">
 
-        <h2 class="title-mailing">Підпишіться на розсилку</h2>
-        <label id="mailing"></label>
+        
+        <label for="mailing" class="title-mailing">Підпишіться на розсилку</label>
+        <div class="mailing-input-but">
         <input type="email" id="mailing" name="mailing" class="input-mailing" placeholder="E-mail" />
+   
         <button type="submit" class="mailing-btn">Підписатися</button>
-
+         </div>
       </div>
       </div>
       

@@ -1209,7 +1209,7 @@ h1,h2,h3,ul,p{
     width: 18px;
     height: 18px;
 
-    transition: transform var(--transition-duration) var(--timing-function),color var(--transition-duration) var(--timing-function);
+    transition: color var(--transition-duration) var(--timing-function);
 
 }
 
@@ -1218,7 +1218,7 @@ h1,h2,h3,ul,p{
 .input-svg-info:focus >.input-info{
     color: var(--accent-color);
 
-    transform: scale(1.1);
+    
 }
 
 .form-chek{
@@ -1240,11 +1240,7 @@ h1,h2,h3,ul,p{
     
     color: #757575;
 
-    transition: transform var(--transition-duration) var(--timing-function);
-}
-
-.check-input:checked+.check-label{
-    transform: scale(1.1);
+   
 }
 
 
@@ -1296,28 +1292,37 @@ position: absolute;
     overflow: hidden;
 }
 
-.check-label::before{
+.check-svg{
     content: "";
     display: inline-block;
 
     width: 16px;
     height:15px ;
-    margin-right: 7px;
+    padding-bottom: 3px;
+    padding-right: 2px;
+}
 
+.checkbox-icon{
+    width:16px ;
+    height: 15px;
     
+    margin-right: 7px;
+    
+    
+
     border: 1px solid #000000;
-    border-radius:1px ;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    
+        border-radius: 1px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 
-.check-input:checked + .check-label::before{
+.check-input:checked + .checkbox-icon{
     border-color: var(--accent-color);
     background-color: var(--accent-color);
-  background-image: url(../image/icon-check.svg);
-  background-size: contain;
-  background-origin: border-box;
+  
+    background-size: contain;
+  
+    background-origin: border-box;
 
     
 }
@@ -1327,6 +1332,12 @@ position: absolute;
     height: 86px;
 
     margin-left: 93px;
+}
+
+.mailing-input-but{
+    display:flex;
+    margin-top: 20px;
+
 }
 
 .title-mailing{
@@ -1339,7 +1350,7 @@ position: absolute;
 
     color: #FFFFFF;
 
-    margin-bottom: 20px;
+    
 }
 
 .mailing-btn{
@@ -1367,7 +1378,7 @@ position: absolute;
     
         color: #FFFFFF;
 
-        margin-left: 7px;
+        margin-left: 12px;
         padding-left: 28px;
 
         position: relative;
