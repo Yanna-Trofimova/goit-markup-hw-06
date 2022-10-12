@@ -12,7 +12,9 @@
       rel="stylesheet">
     <title>Студія</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="stylesheet" href="./css/main.min.css">
+    
   </head>
   <body>
     <header class="header">
@@ -117,15 +119,18 @@
 
                 <div class="form-chek">
                 
-                  <input type="checkbox" id="agree" name="mailing-list"  class="check-input"/>
-                  <div class="checkbox-icon">
-                    <svg class="check-svg">
-                      <use href="./image/icon.svg#icon-check"></use>
-                    </svg>
-                  </div>
+                 
                   
-                  <label for="agree" class="check-label">Погоджуюся з розсилкою та приймаю <span><a href="" class="agreement-link">Умови договору</a>
-                    </span></label>
+                  <label for="agree" class="check-label">
+                    <input type="checkbox" id="agree" name="mailing-list" class="check-input" />
+                    <div class="checkbox-icon">
+                      <svg class="check-svg">
+                        <use href="./image/icon.svg#icon-check"></use>
+                      </svg>
+                    </div>
+                    Погоджуюся з розсилкою та приймаю <span><a href="" class="agreement-link">Умови договору</a>
+                    </span>
+                  </label>
                 
                 </div>
 
@@ -144,14 +149,14 @@
       <!--Section about us-->
       <section class="about">
 
-        <div class="container width-size">
-          <h2 class="about-title visually-hidden">Про нас</h2>
+        <div class="container about__container width-size">
+          <h2 class="about__title visually-hidden">Про нас</h2>
         
-        <ul class="about-list ull">
-          <li class="about-item icon-ditails">
-              <div class="about-icon">
+        <ul class="list-about ull">
+          <li class="list-about__item icon-ditails">
+              <div class="icon-about">
 
-                <svg class="about-svg">
+                <svg class="icon-about__svg">
                   <use href="./image/icon.svg#ditails"> 
                     
                   </use>
@@ -160,17 +165,17 @@
               </div>
 
 
-            <h3 class="about-titles">УВАГА ДО ДЕТАЛЕЙ</h3>
-            <p class="about-paragraph">
+            <h3 class="list-about__title">УВАГА ДО ДЕТАЛЕЙ</h3>
+            <p class="list-about__paragraph">
               Ідейні міркування, і навіть початок повсякденної роботи з
               формування позиції.
             </p>
           </li>
-          <li class="about-item icon-clock">
+          <li class="list-about__item icon-clock">
 
-            <div class="about-icon">
+            <div class="icon-about">
             
-              <svg class="about-svg">
+              <svg class="icon-about__svg">
                 <use href="./image/icon.svg#clock">
             
                 </use>
@@ -178,17 +183,17 @@
             
             </div>
 
-            <h3 class="about-titles">ПУНКТУАЛЬНІСТЬ</h3>
-            <p class="about-paragraph">
+            <h3 class="list-about__title">ПУНКТУАЛЬНІСТЬ</h3>
+            <p class="list-about__paragraph">
               Завдання організації, особливо рамки і місце навчання кадрів тягне
               у себе.
             </p>
           </li>
-          <li class="about-item icon-diagram">
+          <li class="list-about__item icon-diagram">
 
-            <div class="about-icon">
+            <div class="icon-about">
             
-              <svg class="about-svg">
+              <svg class="icon-about__svg">
                 <use href="./image/icon.svg#diagram">
             
                 </use>
@@ -196,16 +201,16 @@
             
             </div>
 
-            <h3 class="about-titles">ПЛАНУВАННЯ</h3>
-            <p class="about-paragraph">
+            <h3 class="list-about__title">ПЛАНУВАННЯ</h3>
+            <p class="list-about__paragraph">
               Так само консультація з широким активом значною мірою зумовлює.
             </p>
           </li>
-          <li class="about-item icon-astronaunt">
+          <li class="list-about__item icon-astronaunt">
 
-            <div class="about-icon">
+            <div class="icon-about">
             
-              <svg class="about-svg">
+              <svg class="icon-about__svg">
                 <use href="./image/icon.svg#astronaut">
             
                 </use>
@@ -213,8 +218,8 @@
             
             </div>
 
-            <h3 class="about-titles">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-            <p class="about-paragraph">
+            <h3 class="list-about__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+            <p class="list-about__paragraph">
               Значимість цих проблем настільки очевидна, що реалізація планових
               завдань.
             </p>
@@ -226,27 +231,27 @@
 
       <!--Section what we do-->
       <section class="what-do">
-        <div class="container">
-          <h2 class="what-do-title">Чим ми займаємося</h2>
-          <ul class="what-do-list ull">
-            <li  class="what-do-item">
-              <div class="wrapper-what-do">
+        <div class="what-do__container container">
+          <h2 class="what-do__title">Чим ми займаємося</h2>
+          <ul class="list-do ull">
+            <li  class="list-do__item">
+              <div class="list-do__wrapper">
               <img src="./image/img.jpg" alt="клавіатура" width="370" height="294" />
-              <p class="text-wrap-do">Десктопні додатки</p>
+              <p class="list-do__pharagraph">Десктопні додатки</p>
               </div>
             </li>
 
-            <li class="what-do-item">
-              <div class="wrapper-what-do">
+            <li class="list-do__item">
+              <div class="list-do__wrapper">
               <img src="./image/img-1.jpg" alt="телефон" width="370" height="294" />
-              <p class="text-wrap-do">Мобільні додатки</p>
+              <p class="list-do__pharagraph">Мобільні додатки</p>
               </div>
             </li>
 
-            <li class="what-do-item">
-              <div class="wrapper-what-do">
+            <li class="list-do__item">
+              <div class="list-do__wrapper">
               <img src="./image/img-2.jpg" alt="планшет" width="370" height="294" />
-              <p class="text-wrap-do">Дизайнерські рішення</p>
+              <p class="list-do__pharagraph">Дизайнерські рішення</p>
               </div>
             </li>
 
